@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitar Presupuesto | Kiaras Reign - Productos Premium para Bebés</title>
+    <meta name="description" content="Solicita un presupuesto personalizado para productos premium y ecológicos para bebés. Asesoramiento experto y precios especiales en Kiaras Reign.">
+    <meta name="keywords" content="presupuesto bebés, productos ecológicos personalizados, asesoramiento infantil, Rey León, presupuesto personalizado">
+    <meta name="author" content="Kiaras Reign Baby Shop">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Solicitar Presupuesto | Kiaras Reign">
+    <meta property="og:description" content="Obtén un presupuesto personalizado para productos premium y ecológicos para bebés">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kiarasreign.com/presupuesto">
+    <meta property="og:image" content="https://kiarasreign.com/images/presupuesto-og.jpg">
+    
+    <link rel="canonical" href="https://kiarasreign.com/presupuesto">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+    <!-- Header Principal -->
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <img src="images/logo.png" alt="Kiaras Reign - El Reino de la Pequeña Kiara" class="logo-image">
+                    </div>
+                    <div class="logo-text">
+                        <span class="tagline">El Reino de la Pequeña Kiara</span>
+                    </div>
+                </div>
+
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">🏠 Inicio</a></li>
+                    <li><a href="productos.html" class="nav-link">🛍️ Productos</a></li>
+                    <li><a href="galeria.html" class="nav-link">🖼️ Galería</a></li>
+                    <li><a href="presupuesto.html" class="nav-link active">💰 Presupuesto</a></li>
+                    <li><a href="contacto.html" class="nav-link">📞 Contacto</a></li>
+                </ul>
+
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main class="main-content">
+        <!-- Hero de Presupuesto -->
+        <section class="budget-hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="section-badge">💰 Presupuesto Personalizado</div>
+                    <h1 class="hero-title">
+                        Crea el Reino Perfecto para tu 
+                        <span class="text-gradient">Pequeño Rey</span>
+                    </h1>
+                    <p class="hero-description">
+                        Nuestros expertos en productos infantiles te ayudarán a crear la selección 
+                        perfecta de productos ecológicos y premium para tu bebé. Recibe un presupuesto 
+                        personalizado con recomendaciones especializadas y precios exclusivos.
+                    </p>
+                    <div class="hero-benefits">
+                        <div class="benefit-item">
+                            <span class="benefit-icon">👨‍⚕️</span>
+                            <span>Asesoramiento Experto</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">💎</span>
+                            <span>Precios Especiales</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">🎁</span>
+                            <span>Regalos Incluidos</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">🚚</span>
+                            <span>Envío Gratuito</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Formulario de Presupuesto -->
+        <section class="budget-form-section">
+            <div class="container">
+                <div class="form-layout">
+                    <div class="form-container">
+                        <div class="form-header">
+                            <h2 class="form-title">Solicitud de Presupuesto Personalizado</h2>
+                            <p class="form-description">
+                                Completa este formulario y nuestros expertos te contactarán en menos de 24 horas 
+                                con un presupuesto detallado y recomendaciones personalizadas para tu pequeño rey.
+                            </p>
+                        </div>
+
+                        <form id="budgetForm" class="budget-form" novalidate>
+                            <!-- Datos de Contacto -->
+                            <div class="form-section">
+                                <div class="section-header">
+                                    <h3 class="section-title">
+                                        <span class="section-icon">👨‍👩‍👶</span>
+                                        Datos de Contacto
+                                    </h3>
+                                    <p class="section-description">Información necesaria para contactarte</p>
+                                </div>
+                                
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="nombre" class="form-label required">Nombre</label>
+                                        <input type="text" id="nombre" name="nombre" class="form-input" 
+                                               required maxlength="15"
+                                               placeholder="Tu nombre"
+                                               autocomplete="given-name">
+                                        <div class="form-error" id="nombre-error"></div>
+                                        <div class="form-help">Solo letras, máximo 15 caracteres</div>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="apellidos" class="form-label required">Apellidos</label>
+                                        <input type="text" id="apellidos" name="apellidos" class="form-input" 
+                                               required maxlength="40"
+                                               placeholder="Tus apellidos"
+                                               autocomplete="family-name">
+                                        <div class="form-error" id="apellidos-error"></div>
+                                        <div class="form-help">Solo letras, máximo 40 caracteres</div>
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="telefono" class="form-label required">Teléfono de Contacto</label>
+                                        <input type="tel" id="telefono" name="telefono" class="form-input" 
+                                               required maxlength="9"
+                                               placeholder="123456789"
+                                               autocomplete="tel">
+                                        <div class="form-error" id="telefono-error"></div>
+                                        <div class="form-help">Solo números, exactamente 9 dígitos</div>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="email" class="form-label required">Correo Electrónico</label>
+                                        <input type="email" id="email" name="email" class="form-input" 
+                                               required 
+                                               placeholder="tu@email.com"
+                                               autocomplete="email">
+                                        <div class="form-error" id="email-error"></div>
+                                        <div class="form-help">Formato: nombre@dominio.com</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Selección de Productos y Presupuesto -->
+                            <div class="form-section">
+                                <div class="section-header">
+                                    <h3 class="section-title">
+                                        <span class="section-icon">🛍️</span>
+                                        Configuración del Presupuesto
+                                    </h3>
+                                    <p class="section-description">Personaliza tu selección de productos</p>
+                                </div>
+                                
+                                <!-- Selección de Producto -->
+                                <div class="form-group">
+                                    <label for="producto" class="form-label required">Producto Principal</label>
+                                    <select id="producto" name="producto" class="form-select" required>
+                                        <option value="">Selecciona un producto</option>
+                                        <option value="150">Pack Recién Nacido Premium - €150.00</option>
+                                        <option value="200">Pack Bebé Explorador - €200.00</option>
+                                        <option value="300">Pack Reino Completo - €300.00</option>
+                                        <option value="120">Colección Peluches Orgánicos - €120.00</option>
+                                        <option value="180">Colección Ropa Ecológica - €180.00</option>
+                                        <option value="90">Kit Alimentación Natural - €90.00</option>
+                                    </select>
+                                    <div class="form-error" id="producto-error"></div>
+                                </div>
+
+                                <!-- Plazo de Entrega -->
+                                <div class="form-group">
+                                    <label for="plazo" class="form-label required">Plazo de Entrega (meses)</label>
+                                    <input type="number" id="plazo" name="plazo" class="form-input" 
+                                           required min="1" max="24" value="1"
+                                           placeholder="Número de meses">
+                                    <div class="form-error" id="plazo-error"></div>
+                                    <div class="form-help">
+                                        <strong>Descuentos por plazo:</strong><br>
+                                        • 3+ meses: 5% descuento<br>
+                                        • 6+ meses: 10% descuento<br>
+                                        • 12+ meses: 15% descuento
+                                    </div>
+                                </div>
+
+                                <!-- Extras -->
+                                <div class="form-group">
+                                    <label class="form-label">Extras Opcionales</label>
+                                    <div class="checkbox-grid">
+                                        <label class="checkbox-container">
+                                            <input type="checkbox" name="extras[]" value="25">
+                                            <span class="checkmark"></span>
+                                            <span class="checkbox-text">
+                                                <strong>Envío Express (+€25)</strong><br>
+                                                <small>Entrega en 24-48 horas</small>
+                                            </span>
+                                        </label>
+                                        
+                                        <label class="checkbox-container">
+                                            <input type="checkbox" name="extras[]" value="15">
+                                            <span class="checkmark"></span>
+                                            <span class="checkbox-text">
+                                                <strong>Embalaje Regalo (+€15)</strong><br>
+                                                <small>Caja premium con lazo</small>
+                                            </span>
+                                        </label>
+                                        
+                                        <label class="checkbox-container">
+                                            <input type="checkbox" name="extras[]" value="30">
+                                            <span class="checkmark"></span>
+                                            <span class="checkbox-text">
+                                                <strong>Personalización (+€30)</strong><br>
+                                                <small>Bordado con nombre del bebé</small>
+                                            </span>
+                                        </label>
+                                        
+                                        <label class="checkbox-container">
+                                            <input type="checkbox" name="extras[]" value="20">
+                                            <span class="checkmark"></span>
+                                            <span class="checkbox-text">
+                                                <strong>Garantía Extendida (+€20)</strong><br>
+                                                <small>2 años de garantía total</small>
+                                            </span>
+                                        </label>
+                                        
+                                        <label class="checkbox-container">
+                                            <input type="checkbox" name="extras[]" value="40">
+                                            <span class="checkmark"></span>
+                                            <span class="checkbox-text">
+                                                <strong>Consultoría Experta (+€40)</strong><br>
+                                                <small>Sesión personalizada 1h</small>
+                                            </span>
+                                        </label>
+                                        
+                                        <label class="checkbox-container">
+                                            <input type="checkbox" name="extras[]" value="10">
+                                            <span class="checkmark"></span>
+                                            <span class="checkbox-text">
+                                                <strong>Tarjeta de Felicitación (+€10)</strong><br>
+                                                <small>Mensaje personalizado</small>
+                                            </span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <!-- Resumen del Presupuesto -->
+                                <div class="budget-summary">
+                                    <h4 class="summary-title">
+                                        <i class="fas fa-calculator"></i>
+                                        Resumen del Presupuesto
+                                    </h4>
+                                    <div class="summary-content">
+                                        <div id="presupuesto-desglose" class="budget-breakdown">
+                                            <div class="breakdown-item">
+                                                <span>Selecciona un producto para ver el desglose</span>
+                                            </div>
+                                        </div>
+                                        <div class="budget-total">
+                                            <span class="total-label">Total:</span>
+                                            <span id="presupuesto-total" class="total-amount">€0.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Condiciones y Envío -->
+                            <div class="form-section">
+                                <div class="section-header">
+                                    <h3 class="section-title">
+                                        <span class="section-icon">📋</span>
+                                        Condiciones y Envío
+                                    </h3>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="checkbox-container required">
+                                        <input type="checkbox" id="condiciones" name="condiciones" value="si" required>
+                                        <span class="checkmark"></span>
+                                        <span class="checkbox-text">
+                                            He leído y acepto las <a href="#" class="link">Condiciones de Privacidad</a> 
+                                            y los <a href="#" class="link">Términos y Condiciones</a> de Kiaras Reign
+                                        </span>
+                                    </label>
+                                    <div class="form-error" id="condiciones-error"></div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="checkbox-container">
+                                        <input type="checkbox" id="newsletter" name="newsletter" value="si">
+                                        <span class="checkmark"></span>
+                                        <span class="checkbox-text">
+                                            Quiero recibir ofertas especiales y consejos exclusivos del Reino de Kiara
+                                        </span>
+                                    </label>
+                                </div>
+
+                                <div class="form-actions">
+                                    <button type="submit" class="btn btn-primary-large" id="submit-btn">
+                                        <span class="btn-text">
+                                            <i class="fas fa-paper-plane"></i>
+                                            Solicitar Presupuesto
+                                        </span>
+                                        <span class="btn-loading" style="display: none;">
+                                            <span class="spinner"></span>
+                                            Enviando...
+                                        </span>
+                                    </button>
+                                    
+                                    <button type="button" class="btn btn-secondary" id="reset-budget">
+                                        <i class="fas fa-undo"></i>
+                                        Resetear Formulario
+                                    </button>
+                                </div>
+
+                                <p class="form-note">
+                                    📧 Te enviaremos el presupuesto detallado en menos de 24 horas junto con 
+                                    recomendaciones personalizadas de nuestros expertos.
+                                </p>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Panel de Información -->
+                    <div class="info-panel">
+                        <div class="info-card">
+                            <div class="card-header">
+                                <h3 class="card-title">
+                                    <span class="card-icon">💎</span>
+                                    Ventajas Exclusivas
+                                </h3>
+                            </div>
+                            <div class="card-content">
+                                <div class="advantage-item">
+                                    <div class="advantage-icon">🎯</div>
+                                    <div class="advantage-text">
+                                        <strong>Asesoramiento Personalizado</strong>
+                                        <p>Expertos en desarrollo infantil te guiarán</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="advantage-item">
+                                    <div class="advantage-icon">💰</div>
+                                    <div class="advantage-text">
+                                        <strong>Precios Especiales</strong>
+                                        <p>Descuentos exclusivos por volumen y plazo</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="advantage-item">
+                                    <div class="advantage-icon">🚚</div>
+                                    <div class="advantage-text">
+                                        <strong>Envío Gratuito</strong>
+                                        <p>En pedidos superiores a €100</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="advantage-item">
+                                    <div class="advantage-icon">🔄</div>
+                                    <div class="advantage-text">
+                                        <strong>Garantía Total</strong>
+                                        <p>30 días para cambios y devoluciones</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="card-header">
+                                <h3 class="card-title">
+                                    <span class="card-icon">📞</span>
+                                    ¿Necesitas Ayuda?
+                                </h3>
+                            </div>
+                            <div class="card-content">
+                                <p>Nuestros expertos están disponibles para ayudarte a elegir los mejores productos para tu pequeño rey.</p>
+                                
+                                <div class="contact-options">
+                                    <a href="tel:+34911234567" class="contact-option">
+                                        <i class="fas fa-phone"></i>
+                                        <span>+34 (91) 123-4567</span>
+                                    </a>
+                                    
+                                    <a href="mailto:presupuestos@kiarasreign.com" class="contact-option">
+                                        <i class="fas fa-envelope"></i>
+                                        <span>presupuestos@kiarasreign.com</span>
+                                    </a>
+                                    
+                                    <a href="contacto.html" class="contact-option">
+                                        <i class="fas fa-comments"></i>
+                                        <span>Chat en vivo</span>
+                                    </a>
+                                </div>
+                                
+                                <div class="schedule-info">
+                                    <h4>Horario de Atención</h4>
+                                    <p>Lun-Vie: 9:00-18:00<br>Sáb: 10:00-14:00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <img src="images/logo.png" alt="Kiaras Reign" class="footer-logo-image">
+                        </div>
+                        <div class="logo-text">
+                            <span>El Reino de la Pequeña Kiara</span>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        Productos premium y ecológicos para bebés, inspirados en los valores 
+                        de El Rey León. Calidad, seguridad y sostenibilidad para los pequeños reyes.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" class="social-icon-link" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-icon-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-icon-link" aria-label="TikTok">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="#" class="social-icon-link" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="#" class="social-icon-link" aria-label="Pinterest">
+                            <i class="fab fa-pinterest"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Navegación Rápida</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="galeria.html">Galería</a></li>
+                        <li><a href="presupuesto.html">Presupuesto</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Categorías del Reino</h4>
+                    <ul class="footer-links">
+                        <li><a href="productos.html#peluches">Peluches Orgánicos</a></li>
+                        <li><a href="productos.html#ropa">Ropa Ecológica</a></li>
+                        <li><a href="productos.html#alimentacion">Alimentación Natural</a></li>
+                        <li><a href="productos.html#descanso">Productos de Descanso</a></li>
+                        <li><a href="productos.html#juguetes">Juguetes Educativos</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Contacto</h4>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-map-marker-alt"></i> Calle de la Sabana Real, 123<br>28001 Madrid, España</p>
+                        <p><i class="fas fa-phone"></i> +34 (91) 123-4567</p>
+                        <p><i class="fas fa-envelope"></i> hola@kiarasreign.com</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-legal">
+                    <p>&copy; 2025 Kiaras Reign. Todos los derechos reservados.</p>
+                    <div class="legal-links">
+                        <a href="#">Política de Privacidad</a>
+                        <a href="#">Términos y Condiciones</a>
+                        <a href="#">Aviso Legal</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/budget.js"></script>
+</body>
+</html>
+

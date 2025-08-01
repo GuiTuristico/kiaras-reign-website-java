@@ -1,0 +1,41 @@
+{
+  "noticias": [
+    {
+      "id": 1,
+      "titulo": "Nueva Colección Primavera 2025",
+      "fecha": "2025-01-15",
+      "resumen": "Descubre nuestra nueva colección de productos ecológicos inspirados en la temporada de primavera.",
+      "contenido": "Kiaras Reign presenta su nueva colección primavera 2025, con productos 100% orgánicos y diseños únicos inspirados en la naturaleza. Cada pieza ha sido cuidadosamente seleccionada para ofrecer la máxima comodidad y seguridad para tu pequeño rey.",
+      "imagen": "images/noticia1.jpg",
+      "categoria": "productos"
+    },
+    {
+      "id": 2,
+      "titulo": "Certificación Ecológica Internacional",
+      "fecha": "2025-01-10",
+      "resumen": "Kiaras Reign obtiene la certificación ecológica internacional más prestigiosa del sector.",
+      "contenido": "Nos enorgullece anunciar que hemos obtenido la certificación GOTS (Global Organic Textile Standard), que garantiza que nuestros productos cumplen con los más altos estándares de sostenibilidad y responsabilidad social.",
+      "imagen": "images/noticia2.jpg",
+      "categoria": "empresa"
+    },
+    {
+      "id": 3,
+      "titulo": "Consejos para el Cuidado del Bebé en Invierno",
+      "fecha": "2025-01-05",
+      "resumen": "Guía completa para mantener a tu pequeño rey cómodo y seguro durante los meses fríos.",
+      "contenido": "El invierno requiere cuidados especiales para los bebés. Te compartimos consejos expertos sobre cómo elegir la ropa adecuada, mantener la temperatura ideal y proteger la piel delicada de tu bebé durante esta temporada.",
+      "imagen": "images/noticia3.jpg",
+      "categoria": "consejos"
+    },
+    {
+      "id": 4,
+      "titulo": "Colaboración con Fundación Infantil",
+      "fecha": "2024-12-28",
+      "resumen": "Kiaras Reign se une a la Fundación Esperanza Infantil para ayudar a familias necesitadas.",
+      "contenido": "Como parte de nuestro compromiso social, hemos iniciado una colaboración con la Fundación Esperanza Infantil para donar productos esenciales a familias en situación vulnerable. Por cada compra realizada, donamos un producto a esta noble causa.",
+      "imagen": "images/noticia4.jpg",
+      "categoria": "social"
+    }
+  ]
+}
+

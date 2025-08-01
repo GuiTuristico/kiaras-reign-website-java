@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Kiaras Reign - Productos Premium para Bebés</title>
+    <meta name="description" content="Contacta con Kiaras Reign para consultas sobre productos premium y ecológicos para bebés. Estamos aquí para ayudarte a elegir lo mejor para tu pequeño rey.">
+    <meta name="keywords" content="contacto Kiaras Reign, atención cliente bebés, consultas productos ecológicos, Rey León tienda">
+    <meta name="author" content="Kiaras Reign Baby Shop">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Contacto | Kiaras Reign">
+    <meta property="og:description" content="Contacta con nosotros para consultas sobre productos premium para bebés">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kiarasreign.com/contacto">
+    <meta property="og:image" content="https://kiarasreign.com/images/contacto-og.jpg">
+    
+    <link rel="canonical" href="https://kiarasreign.com/contacto">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    
+    <!-- Leaflet para mapas -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+</head>
+<body>
+    <!-- Header Principal -->
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <img src="images/logo.png" alt="Kiaras Reign - El Reino de la Pequeña Kiara" class="logo-image">
+                    </div>
+                    <div class="logo-text">
+                        <span class="tagline">El Reino de la Pequeña Kiara</span>
+                    </div>
+                </div>
+
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">🏠 Inicio</a></li>
+                    <li><a href="productos.html" class="nav-link">🛍️ Productos</a></li>
+                    <li><a href="galeria.html" class="nav-link">🖼️ Galería</a></li>
+                    <li><a href="presupuesto.html" class="nav-link">💰 Presupuesto</a></li>
+                    <li><a href="contacto.html" class="nav-link active">📞 Contacto</a></li>
+                </ul>
+
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main class="main-content">
+        <!-- Hero de Contacto -->
+        <section class="contact-hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="section-badge">📞 Contacto</div>
+                    <h1 class="hero-title">
+                        Conecta con el 
+                        <span class="text-gradient">Reino de Kiara</span>
+                    </h1>
+                    <p class="hero-description">
+                        Estamos aquí para ayudarte a elegir los mejores productos para tu pequeño rey. 
+                        Nuestros expertos en productos infantiles están disponibles para resolver todas 
+                        tus dudas y ofrecerte el mejor asesoramiento personalizado.
+                    </p>
+                    <div class="hero-contact-quick">
+                        <div class="quick-contact-item">
+                            <div class="contact-icon">📞</div>
+                            <div class="contact-info">
+                                <div class="contact-label">Llámanos</div>
+                                <div class="contact-value">+34 (91) 123-4567</div>
+                            </div>
+                        </div>
+                        <div class="quick-contact-item">
+                            <div class="contact-icon">📧</div>
+                            <div class="contact-info">
+                                <div class="contact-label">Escríbenos</div>
+                                <div class="contact-value">hola@kiarasreign.com</div>
+                            </div>
+                        </div>
+                        <div class="quick-contact-item">
+                            <div class="contact-icon">⏰</div>
+                            <div class="contact-info">
+                                <div class="contact-label">Horario</div>
+                                <div class="contact-value">Lun-Vie 9:00-18:00</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Principal de Contacto -->
+        <section class="contact-main-section">
+            <div class="container">
+                <div class="contact-layout">
+                    <!-- Formulario de Contacto -->
+                    <div class="contact-form-container">
+                        <div class="form-header">
+                            <h2 class="form-title">Envíanos un Mensaje</h2>
+                            <p class="form-description">
+                                Completa el formulario y te responderemos en menos de 24 horas. 
+                                Nuestros expertos están listos para ayudarte.
+                            </p>
+                        </div>
+
+                        <form id="contactForm" class="contact-form" novalidate>
+                            <!-- Información Personal -->
+                            <div class="form-section">
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="nombre" class="form-label required">Nombre</label>
+                                        <input type="text" id="nombre" name="nombre" class="form-input" 
+                                               required maxlength="15"
+                                               placeholder="Tu nombre"
+                                               autocomplete="given-name">
+                                        <div class="form-error" id="nombre-error"></div>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="apellidos" class="form-label">Apellidos</label>
+                                        <input type="text" id="apellidos" name="apellidos" class="form-input" 
+                                               maxlength="40"
+                                               placeholder="Tus apellidos"
+                                               autocomplete="family-name">
+                                        <div class="form-error" id="apellidos-error"></div>
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="telefono" class="form-label required">Teléfono</label>
+                                        <input type="tel" id="telefono" name="telefono" class="form-input" 
+                                               required maxlength="9"
+                                               placeholder="123456789"
+                                               autocomplete="tel">
+                                        <div class="form-error" id="telefono-error"></div>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="email" class="form-label required">Correo Electrónico</label>
+                                        <input type="email" id="email" name="email" class="form-input" 
+                                               required 
+                                               placeholder="tu@email.com"
+                                               autocomplete="email">
+                                        <div class="form-error" id="email-error"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Asunto y Mensaje -->
+                            <div class="form-section">
+                                <div class="form-group">
+                                    <label for="asunto" class="form-label required">Asunto</label>
+                                    <select id="asunto" name="asunto" class="form-select" required>
+                                        <option value="">Selecciona el motivo de tu consulta</option>
+                                        <option value="consulta-productos">Consulta sobre productos</option>
+                                        <option value="presupuesto">Solicitar presupuesto personalizado</option>
+                                        <option value="pedido">Información sobre mi pedido</option>
+                                        <option value="devolucion">Devolución o cambio</option>
+                                        <option value="asesoramiento">Asesoramiento experto</option>
+                                        <option value="colaboracion">Propuesta de colaboración</option>
+                                        <option value="sugerencia">Sugerencia o comentario</option>
+                                        <option value="otro">Otro motivo</option>
+                                    </select>
+                                    <div class="form-error" id="asunto-error"></div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="mensaje" class="form-label required">Mensaje</label>
+                                    <textarea id="mensaje" name="mensaje" class="form-textarea" 
+                                              required rows="6" maxlength="1000"
+                                              placeholder="Cuéntanos en qué podemos ayudarte. Incluye todos los detalles que consideres importantes para poder ofrecerte la mejor atención personalizada."></textarea>
+                                    <div class="form-error" id="mensaje-error"></div>
+                                    <div class="form-counter">
+                                        <span id="mensaje-counter">0</span>/1000 caracteres
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Preferencias de Contacto -->
+                            <div class="form-section">
+                                <div class="section-header">
+                                    <h3 class="section-title">
+                                        <span class="section-icon">📋</span>
+                                        Preferencias de Contacto
+                                    </h3>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="form-label">¿Cómo prefieres que te contactemos?</label>
+                                    <div class="radio-group">
+                                        <label class="radio-container">
+                                            <input type="radio" name="preferencia-contacto" value="email" checked>
+                                            <span class="radio-mark"></span>
+                                            <span class="radio-text">
+                                                <strong>Correo electrónico</strong><br>
+                                                <small>Respuesta en 24 horas</small>
+                                            </span>
+                                        </label>
+                                        
+                                        <label class="radio-container">
+                                            <input type="radio" name="preferencia-contacto" value="telefono">
+                                            <span class="radio-mark"></span>
+                                            <span class="radio-text">
+                                                <strong>Llamada telefónica</strong><br>
+                                                <small>Horario: Lun-Vie 9:00-18:00</small>
+                                            </span>
+                                        </label>
+                                        
+                                        <label class="radio-container">
+                                            <input type="radio" name="preferencia-contacto" value="whatsapp">
+                                            <span class="radio-mark"></span>
+                                            <span class="radio-text">
+                                                <strong>WhatsApp</strong><br>
+                                                <small>Respuesta rápida</small>
+                                            </span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="horario-preferido" class="form-label">Horario preferido para contacto</label>
+                                    <select id="horario-preferido" name="horario-preferido" class="form-select">
+                                        <option value="">Sin preferencia</option>
+                                        <option value="manana">Mañana (9:00-12:00)</option>
+                                        <option value="tarde">Tarde (12:00-15:00)</option>
+                                        <option value="tarde-noche">Tarde-noche (15:00-18:00)</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <!-- Condiciones -->
+                            <div class="form-section">
+                                <div class="form-group">
+                                    <label class="checkbox-container required">
+                                        <input type="checkbox" id="privacidad" name="privacidad" value="si" required>
+                                        <span class="checkmark"></span>
+                                        <span class="checkbox-text">
+                                            He leído y acepto la <a href="#" class="link">Política de Privacidad</a> 
+                                            y el tratamiento de mis datos personales
+                                        </span>
+                                    </label>
+                                    <div class="form-error" id="privacidad-error"></div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="checkbox-container">
+                                        <input type="checkbox" id="newsletter" name="newsletter" value="si">
+                                        <span class="checkmark"></span>
+                                        <span class="checkbox-text">
+                                            Quiero recibir consejos exclusivos y ofertas especiales del Reino de Kiara
+                                        </span>
+                                    </label>
+                                </div>
+
+                                <div class="form-actions">
+                                    <button type="submit" class="btn btn-primary-large" id="submit-btn">
+                                        <span class="btn-text">
+                                            <i class="fas fa-paper-plane"></i>
+                                            Enviar Mensaje
+                                        </span>
+                                        <span class="btn-loading" style="display: none;">
+                                            <span class="spinner"></span>
+                                            Enviando...
+                                        </span>
+                                    </button>
+                                    
+                                    <button type="reset" class="btn btn-secondary">
+                                        <i class="fas fa-undo"></i>
+                                        Limpiar Formulario
+                                    </button>
+                                </div>
+
+                                <p class="form-note">
+                                    📧 Te responderemos en menos de 24 horas con información personalizada 
+                                    y recomendaciones de nuestros expertos.
+                                </p>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Información de Contacto -->
+                    <div class="contact-info-container">
+                        <!-- Información Principal -->
+                        <div class="info-card">
+                            <div class="card-header">
+                                <h3 class="card-title">
+                                    <span class="card-icon">🏰</span>
+                                    El Reino de Kiara
+                                </h3>
+                            </div>
+                            <div class="card-content">
+                                <div class="contact-detail">
+                                    <div class="detail-icon">📍</div>
+                                    <div class="detail-content">
+                                        <strong>Dirección</strong>
+                                        <p>Calle de la Sabana Real, 123<br>28001 Madrid, España</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact-detail">
+                                    <div class="detail-icon">📞</div>
+                                    <div class="detail-content">
+                                        <strong>Teléfono</strong>
+                                        <p><a href="tel:+34911234567">+34 (91) 123-4567</a></p>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact-detail">
+                                    <div class="detail-icon">📧</div>
+                                    <div class="detail-content">
+                                        <strong>Email</strong>
+                                        <p><a href="mailto:hola@kiarasreign.com">hola@kiarasreign.com</a></p>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact-detail">
+                                    <div class="detail-icon">💬</div>
+                                    <div class="detail-content">
+                                        <strong>WhatsApp</strong>
+                                        <p><a href="https://wa.me/34911234567">+34 (91) 123-4567</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Horarios -->
+                        <div class="info-card">
+                            <div class="card-header">
+                                <h3 class="card-title">
+                                    <span class="card-icon">⏰</span>
+                                    Horarios de Atención
+                                </h3>
+                            </div>
+                            <div class="card-content">
+                                <div class="schedule-item">
+                                    <span class="schedule-day">Lunes - Viernes</span>
+                                    <span class="schedule-time">9:00 - 18:00</span>
+                                </div>
+                                <div class="schedule-item">
+                                    <span class="schedule-day">Sábados</span>
+                                    <span class="schedule-time">10:00 - 14:00</span>
+                                </div>
+                                <div class="schedule-item">
+                                    <span class="schedule-day">Domingos</span>
+                                    <span class="schedule-time">Cerrado</span>
+                                </div>
+                                
+                                <div class="schedule-note">
+                                    <p><strong>Atención urgente:</strong> Para consultas urgentes fuera del horario, 
+                                    envíanos un WhatsApp y te responderemos lo antes posible.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Redes Sociales -->
+                        <div class="info-card">
+                            <div class="card-header">
+                                <h3 class="card-title">
+                                    <span class="card-icon">🌐</span>
+                                    Síguenos
+                                </h3>
+                            </div>
+                            <div class="card-content">
+                                <div class="social-links">
+                                    <a href="#" class="social-link">
+                                        <i class="fab fa-facebook-f"></i>
+                                        <span>Facebook</span>
+                                    </a>
+                                    <a href="#" class="social-link">
+                                        <i class="fab fa-instagram"></i>
+                                        <span>Instagram</span>
+                                    </a>
+                                    <a href="#" class="social-link">
+                                        <i class="fab fa-tiktok"></i>
+                                        <span>TikTok</span>
+                                    </a>
+                                    <a href="#" class="social-link">
+                                        <i class="fab fa-youtube"></i>
+                                        <span>YouTube</span>
+                                    </a>
+                                    <a href="#" class="social-link">
+                                        <i class="fab fa-pinterest"></i>
+                                        <span>Pinterest</span>
+                                    </a>
+                                </div>
+                                
+                                <p class="social-description">
+                                    Únete a nuestra comunidad y descubre consejos exclusivos, 
+                                    ofertas especiales y las últimas novedades del reino.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección del Mapa -->
+        <section class="map-section">
+            <div class="container">
+                <div class="map-header">
+                    <h2 class="section-title">Encuéntranos en el Reino</h2>
+                    <p class="section-description">
+                        Visita nuestra tienda física en el corazón de Madrid. 
+                        Calcula tu ruta y ven a conocer personalmente todos nuestros productos.
+                    </p>
+                </div>
+                
+                <div class="map-container">
+                    <div id="contact-map" class="interactive-map"></div>
+                    
+                    <div class="map-controls">
+                        <div class="route-calculator">
+                            <h3 class="calculator-title">
+                                <i class="fas fa-route"></i>
+                                Calcular Ruta
+                            </h3>
+                            <div class="route-form">
+                                <input type="text" id="origin-address" class="route-input" 
+                                       placeholder="Introduce tu dirección de origen">
+                                <button id="calculate-route" class="btn btn-primary">
+                                    <i class="fas fa-directions"></i>
+                                    Calcular Ruta
+                                </button>
+                            </div>
+                            <div id="route-info" class="route-info"></div>
+                        </div>
+                        
+                        <div class="map-actions">
+                            <button id="center-map" class="btn btn-secondary">
+                                <i class="fas fa-crosshairs"></i>
+                                Centrar Mapa
+                            </button>
+                            <button id="satellite-view" class="btn btn-secondary">
+                                <i class="fas fa-satellite"></i>
+                                Vista Satélite
+                            </button>
+                            <a href="https://maps.google.com/?q=40.4168,-3.7038" target="_blank" class="btn btn-secondary">
+                                <i class="fas fa-external-link-alt"></i>
+                                Abrir en Google Maps
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección FAQ -->
+        <section class="faq-section">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-badge">❓ Preguntas Frecuentes</div>
+                    <h2 class="section-title">¿Tienes Dudas?</h2>
+                    <p class="section-description">
+                        Aquí tienes las respuestas a las preguntas más frecuentes de nuestros clientes.
+                    </p>
+                </div>
+                
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>¿Los productos son realmente ecológicos?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Sí, todos nuestros productos cuentan con certificaciones ecológicas internacionales como GOTS, OEKO-TEX y FSC. Trabajamos únicamente con proveedores que comparten nuestros valores de sostenibilidad.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>¿Cuál es el tiempo de entrega?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>El tiempo de entrega estándar es de 3-5 días laborables. Ofrecemos envío express en 24-48 horas por un coste adicional. Los envíos son gratuitos para pedidos superiores a €100.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>¿Puedo devolver un producto?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Ofrecemos 30 días para devoluciones y cambios. Los productos deben estar en su estado original. El proceso es muy sencillo y sin complicaciones.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>¿Ofrecen asesoramiento personalizado?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Sí, nuestros expertos en desarrollo infantil ofrecen consultas personalizadas gratuitas para ayudarte a elegir los mejores productos según la edad y necesidades de tu bebé.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <img src="images/logo.png" alt="Kiaras Reign" class="footer-logo-image">
+                        </div>
+                        <div class="logo-text">
+                            <span>El Reino de la Pequeña Kiara</span>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        Productos premium y ecológicos para bebés, inspirados en los valores 
+                        de El Rey León. Calidad, seguridad y sostenibilidad para los pequeños reyes.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" class="social-icon-link" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-icon-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-icon-link" aria-label="TikTok">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="#" class="social-icon-link" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="#" class="social-icon-link" aria-label="Pinterest">
+                            <i class="fab fa-pinterest"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Navegación Rápida</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="galeria.html">Galería</a></li>
+                        <li><a href="presupuesto.html">Presupuesto</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Categorías del Reino</h4>
+                    <ul class="footer-links">
+                        <li><a href="productos.html#peluches">Peluches Orgánicos</a></li>
+                        <li><a href="productos.html#ropa">Ropa Ecológica</a></li>
+                        <li><a href="productos.html#alimentacion">Alimentación Natural</a></li>
+                        <li><a href="productos.html#descanso">Productos de Descanso</a></li>
+                        <li><a href="productos.html#juguetes">Juguetes Educativos</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Contacto</h4>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-map-marker-alt"></i> Calle de la Sabana Real, 123<br>28001 Madrid, España</p>
+                        <p><i class="fas fa-phone"></i> +34 (91) 123-4567</p>
+                        <p><i class="fas fa-envelope"></i> hola@kiarasreign.com</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-legal">
+                    <p>&copy; 2025 Kiaras Reign. Todos los derechos reservados.</p>
+                    <div class="legal-links">
+                        <a href="#">Política de Privacidad</a>
+                        <a href="#">Términos y Condiciones</a>
+                        <a href="#">Aviso Legal</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>
+

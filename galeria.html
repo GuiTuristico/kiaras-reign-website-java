@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería | Kiaras Reign - Productos Premium para Bebés</title>
+    <meta name="description" content="Explora nuestra galería de productos premium y ecológicos para bebés. Descubre la calidad y belleza de los productos de Kiaras Reign.">
+    <meta name="keywords" content="galería productos bebés, imágenes productos ecológicos, Kiaras Reign galería, Rey León productos">
+    <meta name="author" content="Kiaras Reign Baby Shop">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Galería | Kiaras Reign">
+    <meta property="og:description" content="Explora nuestra galería de productos premium y ecológicos para bebés">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kiarasreign.com/galeria">
+    <meta property="og:image" content="https://kiarasreign.com/images/galeria-og.jpg">
+    
+    <link rel="canonical" href="https://kiarasreign.com/galeria">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+    <!-- Header Principal -->
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <img src="images/logo.png" alt="Kiaras Reign - El Reino de la Pequeña Kiara" class="logo-image">
+                    </div>
+                    <div class="logo-text">
+                        <span class="tagline">El Reino de la Pequeña Kiara</span>
+                    </div>
+                </div>
+
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">🏠 Inicio</a></li>
+                    <li><a href="productos.html" class="nav-link">🛍️ Productos</a></li>
+                    <li><a href="galeria.html" class="nav-link active">🖼️ Galería</a></li>
+                    <li><a href="presupuesto.html" class="nav-link">💰 Presupuesto</a></li>
+                    <li><a href="contacto.html" class="nav-link">📞 Contacto</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main class="main-content">
+        <!-- Hero de Galería -->
+        <section class="gallery-hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="section-badge">🖼️ Galería Visual</div>
+                    <h1 class="hero-title">
+                        Descubre la Magia del 
+                        <span class="text-gradient">Reino de Kiara</span>
+                    </h1>
+                    <p class="hero-description">
+                        Explora nuestra colección completa de productos premium y ecológicos para bebés. 
+                        Cada imagen cuenta la historia de calidad, seguridad y amor que ponemos en 
+                        cada producto del reino.
+                    </p>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <div class="stat-icon">📸</div>
+                            <div class="stat-text">
+                                <div class="stat-number">500+</div>
+                                <div class="stat-label">Imágenes</div>
+                            </div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-icon">🏷️</div>
+                            <div class="stat-text">
+                                <div class="stat-number">6</div>
+                                <div class="stat-label">Categorías</div>
+                            </div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-icon">⭐</div>
+                            <div class="stat-text">
+                                <div class="stat-number">100%</div>
+                                <div class="stat-label">Premium</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Galería Principal -->
+        <section class="gallery-main-section">
+            <div class="container">
+                <!-- Filtros de Galería -->
+                <div class="gallery-filters">
+                    <button class="filter-btn active" data-filter="all">
+                        <i class="fas fa-th"></i>
+                        Todos los Productos
+                    </button>
+                    <button class="filter-btn" data-filter="peluches">
+                        <i class="fas fa-teddy-bear"></i>
+                        Peluches
+                    </button>
+                    <button class="filter-btn" data-filter="ropa">
+                        <i class="fas fa-tshirt"></i>
+                        Ropa
+                    </button>
+                    <button class="filter-btn" data-filter="alimentacion">
+                        <i class="fas fa-baby-carriage"></i>
+                        Alimentación
+                    </button>
+                    <button class="filter-btn" data-filter="descanso">
+                        <i class="fas fa-bed"></i>
+                        Descanso
+                    </button>
+                    <button class="filter-btn" data-filter="juguetes">
+                        <i class="fas fa-puzzle-piece"></i>
+                        Juguetes
+                    </button>
+                    <button class="filter-btn" data-filter="higiene">
+                        <i class="fas fa-soap"></i>
+                        Higiene
+                    </button>
+                </div>
+
+                <!-- Contador de Resultados -->
+                <div class="gallery-counter">
+                    <span id="results-count">Mostrando todos los productos</span>
+                </div>
+
+                <!-- Grid de Galería -->
+                <div id="gallery-container" class="gallery-grid">
+                    <!-- Peluches -->
+                    <div class="gallery-item peluches" data-category="peluches">
+                        <div class="gallery-image">
+                            <img src="images/gallery/simba.jpg" alt="Peluche Simba Orgánico" loading="lazy">
+                            <div class="gallery-overlay">
+                                <div class="overlay-content">
+                                    <h3>Peluche Simba Orgánico</h3>
+                                    <p>Algodón 100% orgánico</p>
+                                    <div class="overlay-buttons">
+                                        <button class="btn-view" onclick="openLightbox(0)">
+                                            <i class="fas fa-eye"></i>
+                                            Ver
+                                        </button>
+                                        <button class="btn-info" onclick="showProductInfo('peluche-simba')">
+                                            <i class="fas fa-info-circle"></i>
+                                            Info
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <span class="gallery-category">Peluches</span>
+                            <span class="gallery-price">€29.99</span>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item peluches" data-category="peluches">
+                        <div class="gallery-image">
+                            <img src="images/gallery/nala.jpg" alt="Peluche Nala Ecológico" loading="lazy">
+                            <div class="gallery-overlay">
+                                <div class="overlay-content">
+                                    <h3>Peluche Nala Ecológico</h3>
+                                    <p>Materiales sostenibles</p>
+                                    <div class="overlay-buttons">
+                                        <button class="btn-view" onclick="openLightbox(1)">
+                                            <i class="fas fa-eye"></i>
+                                            Ver
+                                        </button>
+                                        <button class="btn-info" onclick="showProductInfo('peluche-nala')">
+                                            <i class="fas fa-info-circle"></i>
+                                            Info
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <span class="gallery-category">Peluches</span>
+                            <span class="gallery-price">€32.99</span>
+                        </div>
+                    </div>
+
+                    <!-- Ropa -->
+                    <div class="gallery-item ropa" data-category="ropa">
+                        <div class="gallery-image">
+                            <img src="images/gallery/body.jpg" alt="Body Kiara Bambú" loading="lazy">
+                            <div class="gallery-overlay">
+                                <div class="overlay-content">
+                                    <h3>Body Kiara Bambú</h3>
+                                    <p>Fibra de bambú orgánico</p>
+                                    <div class="overlay-buttons">
+                                        <button class="btn-view" onclick="openLightbox(2)">
+                                            <i class="fas fa-eye"></i>
+                                            Ver
+                                        </button>
+                                        <button class="btn-info" onclick="showProductInfo('body-kiara')">
+                                            <i class="fas fa-info-circle"></i>
+                                            Info
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <span class="gallery-category">Ropa</span>
+                            <span class="gallery-price">€24.99</span>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item ropa" data-category="ropa">
+                        <div class="gallery-image">
+                            <img src="images/gallery/ropa.jpg" alt="Pijama Sabana Dreams" loading="lazy">
+                            <div class="gallery-overlay">
+                                <div class="overlay-content">
+                                    <h3>Pijama Sabana Dreams</h3>
+                                    <p>Algodón orgánico certificado</p>
+                                    <div class="overlay-buttons">
+                                        <button class="btn-view" onclick="openLightbox(3)">
+                                            <i class="fas fa-eye"></i>
+                                            Ver
+                                        </button>
+                                        <button class="btn-info" onclick="showProductInfo('pijama-savana')">
+                                            <i class="fas fa-info-circle"></i>
+                                            Info
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <span class="gallery-category">Ropa</span>
+                            <span class="gallery-price">€34.99</span>
+                        </div>
+                    </div>
+
+                    <!-- Alimentación -->
+                    <div class="gallery-item alimentacion" data-category="alimentacion">
+                        <div class="gallery-image">
+                            <img src="images/gallery/biberón.jpg" alt="Biberón Natural Glass" loading="lazy">
+                            <div class="gallery-overlay">
+                                <div class="overlay-content">
+                                    <h3>Biberón Natural Glass</h3>
+                                    <p>Vidrio borosilicato libre de BPA</p>
+                                    <div class="overlay-buttons">
+                                        <button class="btn-view" onclick="openLightbox(4)">
+                                            <i class="fas fa-eye"></i>
+                                            Ver
+                                        </button>
+                                        <button class="btn-info" onclick="showProductInfo('biberon-natural')">
+                                            <i class="fas fa-info-circle"></i>
+                                            Info
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <span class="gallery-category">Alimentación</span>
+                            <span class="gallery-price">€19.99</span>
+                        </div>
+                    </div>
+
+                    
+                    <!-- Descanso -->
+                    <div class="gallery-item descanso" data-category="descanso">
+                        <div class="gallery-image">
+                            <img src="images/gallery/sabana.jpg" alt="Manta Kiara Dreams" loading="lazy">
+                            <div class="gallery-overlay">
+                                <div class="overlay-content">
+                                    <h3>Manta Kiara Dreams</h3>
+                                    <p>Algodón orgánico ultra suave</p>
+                                    <div class="overlay-buttons">
+                                        <button class="btn-view" onclick="openLightbox(6)">
+                                            <i class="fas fa-eye"></i>
+                                            Ver
+                                        </button>
+                                        <button class="btn-info" onclick="showProductInfo('manta-kiara')">
+                                            <i class="fas fa-info-circle"></i>
+                                            Info
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <span class="gallery-category">Descanso</span>
+                            <span class="gallery-price">€39.99</span>
+                        </div>
+                    </div>
+
+                    <!-- Juguetes -->
+                    <div class="gallery-item juguetes" data-category="juguetes">
+                        <div class="gallery-image">
+                            <img src="images/gallery/móvil.jpg" alt="Sonajero Madera Natural" loading="lazy">
+                            <div class="gallery-overlay">
+                                <div class="overlay-content">
+                                    <h3>Sonajero Madera Natural</h3>
+                                    <p>Madera de haya certificada FSC</p>
+                                    <div class="overlay-buttons">
+                                        <button class="btn-view" onclick="openLightbox(7)">
+                                            <i class="fas fa-eye"></i>
+                                            Ver
+                                        </button>
+                                        <button class="btn-info" onclick="showProductInfo('sonajero-madera')">
+                                            <i class="fas fa-info-circle"></i>
+                                            Info
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <span class="gallery-category">Juguetes</span>
+                            <span class="gallery-price">€15.99</span>
+                        </div>
+                    </div>
+
+                    
+                </div>
+
+                <!-- Botón Cargar Más -->
+                <div class="gallery-load-more">
+                    <button id="load-more-btn" class="btn btn-secondary">
+                        <i class="fas fa-plus"></i>
+                        Cargar Más Productos
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modal Lightbox -->
+        <div id="lightbox-modal" class="lightbox-modal">
+            <div class="lightbox-content">
+                <button class="lightbox-close" onclick="closeLightbox()">
+                    <i class="fas fa-times"></i>
+                </button>
+                <div class="lightbox-image-container">
+                    <img id="lightbox-image" src="" alt="">
+                    <div class="lightbox-navigation">
+                        <button class="lightbox-prev" onclick="previousImage()">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="lightbox-next" onclick="nextImage()">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="lightbox-info">
+                    <h3 id="lightbox-title"></h3>
+                    <p id="lightbox-description"></p>
+                    <div class="lightbox-actions">
+                        <button class="btn btn-primary" onclick="addToCart()">
+                            <i class="fas fa-shopping-cart"></i>
+                            Añadir al Carrito
+                        </button>
+                        <button class="btn btn-secondary" onclick="requestQuote()">
+                            <i class="fas fa-calculator"></i>
+                            Solicitar Presupuesto
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <img src="images/logo.png" alt="Kiaras Reign" class="footer-logo-image">
+                        </div>
+                        <div class="logo-text">
+                            <span>El Reino de la Pequeña Kiara</span>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        Productos premium y ecológicos para bebés, inspirados en los valores 
+                        de El Rey León. Calidad, seguridad y sostenibilidad para los pequeños reyes.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" class="social-icon-link" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-icon-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-icon-link" aria-label="TikTok">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="#" class="social-icon-link" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="#" class="social-icon-link" aria-label="Pinterest">
+                            <i class="fab fa-pinterest"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Navegación Rápida</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="galeria.html">Galería</a></li>
+                        <li><a href="presupuesto.html">Presupuesto</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Categorías del Reino</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" onclick="filterGallery('peluches')">Peluches Orgánicos</a></li>
+                        <li><a href="#" onclick="filterGallery('ropa')">Ropa Ecológica</a></li>
+                        <li><a href="#" onclick="filterGallery('alimentacion')">Alimentación Natural</a></li>
+                        <li><a href="#" onclick="filterGallery('descanso')">Productos de Descanso</a></li>
+                        <li><a href="#" onclick="filterGallery('juguetes')">Juguetes Educativos</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Contacto</h4>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-map-marker-alt"></i> Calle de la Sabana Real, 123<br>28001 Madrid, España</p>
+                        <p><i class="fas fa-phone"></i> +34 (91) 123-4567</p>
+                        <p><i class="fas fa-envelope"></i> hola@kiarasreign.com</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-legal">
+                    <p>&copy; 2025 Kiaras Reign. Todos los derechos reservados.</p>
+                    <div class="legal-links">
+                        <a href="#">Política de Privacidad</a>
+                        <a href="#">Términos y Condiciones</a>
+                        <a href="#">Aviso Legal</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/gallery.js"></script>
+</body>
+</html>
+
